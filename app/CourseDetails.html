@@ -21,7 +21,7 @@
       <img ng-src="{{course.imageUrl}}" alt="{{course.name}}">
 
       <div class="heading">
-        <h2>{{course.name}}</h2>
+        <h2>{{course.name | uppercase}}</h2>
       </div>
 
       <div class="details">
@@ -42,8 +42,24 @@
       <hr>
 
       <h3>Sessions</h3>
+
+      OrderBy:
+      <select class="select" ng-model="sortOrder">
+        <option value="name" selected>Name</option>
+        <option value="-upVoteCount" selected>Votes</option>
+      </select>
+
+      Show:
+      <select class="select2" ng-model="query.level">
+        <option value="" selected>All</option>
+        <option value="Introductory" selected>Introductory</option>
+        <option value="Intermediate" selected>Intermediate</option>
+        <option value="Advanced" selected>Advanced</option>
+      </select>
+
       <ul class="thumbnails">
-        <li class="session-container" ng-repeat="session in course.sessions">
+<!--        <li class="session-container" ng-repeat="session in course.sessions | orderBy:sortOrder | limitTo: 2 | filter:query">-->
+        <li class="session-container" ng-repeat="session in course.sessions | orderBy:sortOrder | filter:query">
           <div class="votingWidget">
             <div class="votingButton" ng-click="upVoteSession(session)">
 <!--              <span> &#x25B2; </span>-->
@@ -64,7 +80,7 @@
               {{session.name}}
             </h4>
             <h6 class="session-creator">{{session.creatorName}}</h6>
-            <span>Duration: {{session.duration}}</span> <br>
+            <span>Duration: {{session.duration | durations}}</span> <br>
             <span>Level: {{session.level}}</span>
             <p>{{session.abstract}}</p>
 
@@ -81,5 +97,6 @@
 <script src="lib/angular/angular.js"></script>
 <script src="js/app.js"></script>
 <script src="js/controllers/CourseController.js"></script>
+<script src="js/filters.js"></script>
 </body>
 </html>

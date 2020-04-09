@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83389cce-253a-4437-9618-2b907119401c" name="Default Changelist" comment="" />
+    <list default="true" id="83389cce-253a-4437-9618-2b907119401c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/CourseDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/CourseDetails.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/controllers/CourseController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/controllers/CourseController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/web-server.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +35,6 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.3" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/appcopy/img" />
@@ -60,7 +64,8 @@
       <workItem from="1586185379912" duration="14904000" />
       <workItem from="1586204385054" duration="1561000" />
       <workItem from="1586206352654" duration="4565000" />
-      <workItem from="1586266884441" duration="1784000" />
+      <workItem from="1586266884441" duration="2656000" />
+      <workItem from="1586460412019" duration="5105000" />
     </task>
     <servers />
   </component>
